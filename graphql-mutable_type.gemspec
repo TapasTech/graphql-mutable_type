@@ -1,11 +1,10 @@
 $LOAD_PATH.push File.expand_path('../lib', __FILE__)
 
-require 'graphql'
 require 'graphql/mutable_type/version'
 
 Gem::Specification.new do |gem|
   gem.name        = 'graphql-mutable_type'
-  gem.version     = GraphQL::MutableType::VERSION
+  gem.version     = GraphQL::MUTABLE_TYPE_VERSION
   gem.date        = Date.today.to_s
   gem.summary     = 'An Object Type that may have mutation queries.'
   gem.description = 'An Object Type that may have mutation queries.'

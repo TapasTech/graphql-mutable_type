@@ -1,5 +1,3 @@
 module GraphQL
-  class MutableType < ObjectType
-    VERSION = '0.0.1'.freeze
-  end
+  MUTABLE_TYPE_VERSION = '0.0.1'.freeze
 end
