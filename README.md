@@ -1,5 +1,7 @@
 ## GraphQL::MutableType
 
+[![Build Status](https://travis-ci.org/TapasTech/graphql-mutable_type.svg?branch=master)](https://travis-ci.org/TapasTech/graphql-mutable_type)
+
 GraphQL::MutableType is an extension to GraphQL::ObjectType that adds the ability of having nested mutation queries.
 It defines as following:
 
