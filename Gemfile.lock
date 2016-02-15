@@ -1,0 +1,58 @@
+PATH
+  remote: .
+  specs:
+    graphql-mutable_type (0.0.1)
+      graphql (~> 0.10.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    blankslate (3.1.3)
+    codeclimate-test-reporter (0.4.8)
+      simplecov (>= 0.7.1, < 1.0.0)
+    coderay (1.1.0)
+    diff-lcs (1.2.5)
+    docile (1.1.5)
+    graphql (0.10.9)
+      parslet (~> 1.6)
+    json (1.8.3)
+    method_source (0.8.2)
+    parslet (1.7.1)
+      blankslate (>= 2.0, <= 4.0)
+    pry (0.10.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    rake (10.5.0)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+    rspec-core (3.4.2)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-mocks (3.4.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-support (3.4.1)
+    simplecov (0.11.2)
+      docile (~> 1.1.0)
+      json (~> 1.8)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.0)
+    slop (3.6.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  codeclimate-test-reporter (~> 0.4)
+  graphql-mutable_type!
+  pry (~> 0.10)
+  rake (~> 10.4)
+  rspec (~> 3.4)
+
+BUNDLED WITH
+   1.11.2

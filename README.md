@@ -41,4 +41,28 @@ As working with Facebook's practice of GraphQL, we have found that the mutations
 
 So we tried to reorganize the mutations under the Object Type itself, whick looks more like the way models we define our models.
 
-This gem provides some DSLs that helps define the types with mutations inside.
+This gem provides a DSL that helps define the types with mutations inside.
+
+## Usage
+
+Just warp your mutations in ```mutation do ... end```.
+
+```ruby
+KingType = GraphQL::MutableType.define do
+  name 'King'
+  description 'The title of the ruler of the kingdom'
+
+  field :id,   !types.ID
+  field :name, !types.String
+
+  mutation do
+    field :rename, field: RenameKingField
+  end
+end
+```
+
+See alse: [test schema](spec/support/francia_kings_app.rb)
+
+## License
+
+This gem is released under the [MIT License](MIT-LICENSE)
