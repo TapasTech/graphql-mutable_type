@@ -23,6 +23,9 @@ require 'pry'
 require 'graphql-mutable_type'
 require File.join(File.dirname(__FILE__), 'support/francia_kings_app.rb')
 
+require 'coveralls'
+Coveralls.wear!
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest

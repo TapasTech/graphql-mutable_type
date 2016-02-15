@@ -21,6 +21,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'graphql', '~> 0.10.0'
 
+  gem.add_development_dependency 'coveralls'
   gem.add_development_dependency 'codeclimate-test-reporter', '~>0.4'
   gem.add_development_dependency 'pry', '~> 0.10'
   gem.add_development_dependency 'rspec', '~> 3.4'
