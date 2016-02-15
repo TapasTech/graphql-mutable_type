@@ -23,13 +23,15 @@ type FishMutation {
 And can be queried as following:
 
 ```
-query Fish(id: "1") {
-  id
-  name
-  price
-  mutation {
-    sell(weight: 100) {
-      inStock
+query {
+  fish(id: "1") {
+    id
+    name
+    price
+    mutation {
+      sell(weight: 100) {
+        inStock
+      }
     }
   }
 }
