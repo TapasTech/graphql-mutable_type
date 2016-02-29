@@ -20,7 +20,7 @@ class GraphQL::DefinitionHelpers::DefinedByConfig::DefinitionConfig
   def mutation_type(&block)
     @mutation_type ||= begin
       m_type = GraphQL::ObjectType.define(&block)
-      m_type.name = "#{name} Mutation"
+      m_type.name = "#{name}Mutation"
       m_type.description = "Mutations of #{description}"
       m_type
     end
