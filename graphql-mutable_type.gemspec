@@ -19,7 +19,7 @@ Gem::Specification.new do |gem|
   gem.files         = `git ls-files`.split("\n")
   gem.test_files    = `git ls-files -- {spec}/*`.split("\n")
 
-  gem.add_dependency 'graphql', '~> 0.10.0'
+  gem.add_dependency 'graphql', '~> 0.11.0'
 
   gem.add_development_dependency 'coveralls'
   gem.add_development_dependency 'codeclimate-test-reporter', '~>0.4'
