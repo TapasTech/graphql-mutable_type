@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     graphql-mutable_type (0.0.2)
-      graphql (~> 0.11.0)
+      graphql (~> 0.12.0)
 
 GEM
   remote: https://rubygems.org/
@@ -19,7 +19,7 @@ GEM
       tins (~> 1.6.0)
     diff-lcs (1.2.5)
     docile (1.1.5)
-    graphql (0.11.0)
+    graphql (0.12.0)
       parslet (~> 1.6)
     json (1.8.3)
     method_source (0.8.2)
@@ -29,7 +29,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    rake (10.5.0)
+    rake (11.1.2)
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
       rspec-expectations (~> 3.4.0)
@@ -62,7 +62,7 @@ DEPENDENCIES
   coveralls
   graphql-mutable_type!
   pry (~> 0.10)
-  rake (~> 10.4)
+  rake (~> 11.1)
   rspec (~> 3.4)
 
 BUNDLED WITH

@@ -6,7 +6,6 @@ RSpec.describe GraphQL::MutableType do
   let(:type) { KingType }
   let(:schema) { FranciaSchema }
   describe 'define mutable type' do
-    
     let(:mutation) { type.fields['mutation'] }
     let(:mutation_fields) { mutation.type.fields }
 
@@ -26,38 +25,38 @@ RSpec.describe GraphQL::MutableType do
 
   describe 'execute query with mutation' do
     let(:query) do
-%q{
-  query {
-    king(id: "k_germany") {
-      id
-      name
-      mutation {
-        rename(name: "Germany") {
-          name
-        }
-      }
-    }
-  }
-}
-    end
-
-    let(:result) do
-      {
-        "data" => {
-          "king" => {
-            "id" => "k_germany",
-            "name" => "East Francia",
-            "mutation" => {
-              "rename" => {
-                "name" => "Germany"
+      '
+        query {
+          king(id: "k_germany") {
+            id
+            name
+            mutation {
+              rename(name: "Germany") {
+                name
               }
             }
           }
         }
-      } 
+      '
     end
 
-    it 'renames East Francia to Germany' do      
+    let(:result) do
+      {
+        'data' => {
+          'king' => {
+            'id' => 'k_germany',
+            'name' => 'East Francia',
+            'mutation' => {
+              'rename' => {
+                'name' => 'Germany'
+              }
+            }
+          }
+        }
+      }
+    end
+
+    it 'renames East Francia to Germany' do
       expect(schema.execute(query)).to eq(result)
     end
   end
